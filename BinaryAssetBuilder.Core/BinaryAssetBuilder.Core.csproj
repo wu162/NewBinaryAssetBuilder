@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+            Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{E10A2D31-E630-4C5C-BB3E-000848FDE5B5}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>BinaryAssetBuilder.Core</RootNamespace>
+        <AssemblyName>BinaryAssetBuilder.Core</AssemblyName>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+        <LangVersion>8</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="BinaryAssetBuilder.Utility">
+          <HintPath>..\..\..\yule\RA3_MODSDK-X_1.3\tools\BinaryAssetBuilder.Utility.dll</HintPath>
+        </Reference>
+        <Reference Include="System"/>
+        <Reference Include="System.Configuration" />
+        <Reference Include="System.Configuration.ConfigurationManager, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+          <HintPath>..\packages\System.Configuration.ConfigurationManager.9.0.0-preview.3.24172.9\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Core"/>
+        <Reference Include="System.Data"/>
+        <Reference Include="System.Drawing" />
+        <Reference Include="System.Windows.Forms" />
+        <Reference Include="System.Xml"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="BinaryAssetBuilder.Core\AssetBuffer.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\AssetDeclarationDocument.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\AssetLocation.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\AssetLocationInfo.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\AssetLocationOption.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\AssetReport.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\AsynchronousFileReader.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\AutoComplete.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\BinaryAsset.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\Chunk.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\Collection2.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\Definition.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\DefinitionPair.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\DefinitionSet.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\DocumentProcessor.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\DocumentState.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\ExpressionEvaluatorWrapper.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\ExtendedTypeInformation.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\FileHashItem.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\FileItem.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\FileNameResolver.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\FileNameXmlResolver.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\FileState.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\FindLocation.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\GUIBuildOutput.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\HashingWriter.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\HashProvider.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\IAssetBuilderPlugin.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\IAssetBuilderVerifierPlugin.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\IExpressionEvaluator.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\InclusionItem.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\InclusionType.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\InstanceDeclaration.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\InstanceHandle.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\InstanceHandleSet.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\InstanceSet.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\ISessionCache.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\KeyedCollection2.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\List2.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\NodeJoiner.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\NoScrollRichTextBox.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\OutputAsset.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\OutputManager.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\PathCharType.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\PathMapItem.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\PathMonitor.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\PluginRegistry.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\SchemaSet.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\SessionCache.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\Set.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\SettingsLoader.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\ShMisc.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\ShPath.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\StringHashBin.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\StringHashBinDescriptor.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\TargetPlatform.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\TraceKind.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\Tracer.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\TraceWriteHandler.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\VerifierPluginRegistry.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\XIncludingReaderWrapper.cs" />
+        <Compile Include="BinaryAssetBuilder.Core\XmlHelper.cs" />
+        <Compile Include="BinaryAssetBuilder.Project\BinaryAssetBuilderProject.cs" />
+        <Compile Include="BinaryAssetBuilder.Project\BinaryStream.cs" />
+        <Compile Include="BinaryAssetBuilder.Project\StreamConfiguration.cs" />
+        <Compile Include="BinaryAssetBuilder.Project\StreamReference.cs" />
+        <Compile Include="BinaryAssetBuilder\BinaryAssetBuilderException.cs" />
+        <Compile Include="BinaryAssetBuilder\BuildConfiguration.cs" />
+        <Compile Include="BinaryAssetBuilder\CommandLineOptionAttribute.cs" />
+        <Compile Include="BinaryAssetBuilder\CommandLineOptionProcessor.cs" />
+        <Compile Include="BinaryAssetBuilder\ErrorCode.cs" />
+        <Compile Include="BinaryAssetBuilder\IAssetBuilderPluginBase.cs" />
+        <Compile Include="BinaryAssetBuilder\OptionalCommandLineOptionAttribute.cs" />
+        <Compile Include="BinaryAssetBuilder\OrderedCommandLineOptionAttribute.cs" />
+        <Compile Include="BinaryAssetBuilder\PluginDescriptor.cs" />
+        <Compile Include="BinaryAssetBuilder\SerializedSectionHandler.cs" />
+        <Compile Include="BinaryAssetBuilder\Settings.cs" />
+        <Compile Include="Program.cs"/>
+        <Compile Include="Properties\AssemblyInfo.cs"/>
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="packages.config" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\BinaryAssetBuilder.Logger\BinaryAssetBuilder.Logger.csproj">
+        <Project>{be448451-4477-4f4e-81a0-30ab5c27701d}</Project>
+        <Name>BinaryAssetBuilder.Logger</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\EALA.Metrics\EALA.Metrics.csproj">
+        <Project>{047860b6-d4c2-4748-9f38-6faf609c587e}</Project>
+        <Name>EALA.Metrics</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\EALAHash\EALAHash.csproj">
+        <Project>{42877264-3127-41a5-baaf-01a760eb0bbe}</Project>
+        <Name>EALAHash</Name>
+      </ProjectReference>
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>

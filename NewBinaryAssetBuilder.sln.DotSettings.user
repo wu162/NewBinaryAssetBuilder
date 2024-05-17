@@ -1,0 +1,8 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=D_003A_005Cfile_005Cyule_005CRA3_005FMODSDK_002DX_005F1_002E3_005Ctools_005Cantlr_002Eastframe_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=D_003A_005Cfile_005Cyule_005CRA3_005FMODSDK_002DX_005F1_002E3_005Ctools_005Cantlr_002Eruntime_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=D_003A_005Cfile_005Cyule_005CRA3_005FMODSDK_002DX_005F1_002E3_005Ctools_005CBinaryAssetBuilder_002ECore_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=D_003A_005Cfile_005Cyule_005CRA3_005FMODSDK_002DX_005F1_002E3_005Ctools_005CBinaryAssetBuilder_002ERemote_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=D_003A_005Cfile_005Cyule_005CRA3_005FMODSDK_002DX_005F1_002E3_005Ctools_005CBinaryAssetBuilder_002EUtility_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=D_003A_005Cfile_005Cyule_005CRA3_005FMODSDK_002DX_005F1_002E3_005Ctools_005CEALA_002EHash_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=D_003A_005Cfile_005Cyule_005CRA3_005FMODSDK_002DX_005F1_002E3_005Ctools_005CEALA_002EMetrics_002Edll/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>

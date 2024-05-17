@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewBinaryAssetBuilder", "NewBinaryAssetBuilder\NewBinaryAssetBuilder.csproj", "{7FD5893F-1D0A-4FA0-813B-934F5348C408}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryAssetBuilder.Core", "BinaryAssetBuilder.Core\BinaryAssetBuilder.Core.csproj", "{E10A2D31-E630-4C5C-BB3E-000848FDE5B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EALA.Metrics", "EALA.Metrics\EALA.Metrics.csproj", "{047860B6-D4C2-4748-9F38-6FAF609C587E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EALAHash", "EALAHash\EALAHash.csproj", "{42877264-3127-41A5-BAAF-01A760EB0BBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryAssetBuilder.ExpressionEval", "BinaryAssetBuilder.ExpressionEval\BinaryAssetBuilder.ExpressionEval.csproj", "{91D53FB0-7B5C-49E6-8CF4-A03A1EB0D737}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryAssetBuilder.Logger", "BinaryAssetBuilder.Logger\BinaryAssetBuilder.Logger.csproj", "{BE448451-4477-4F4E-81A0-30AB5C27701D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FD5893F-1D0A-4FA0-813B-934F5348C408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD5893F-1D0A-4FA0-813B-934F5348C408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FD5893F-1D0A-4FA0-813B-934F5348C408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FD5893F-1D0A-4FA0-813B-934F5348C408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E10A2D31-E630-4C5C-BB3E-000848FDE5B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E10A2D31-E630-4C5C-BB3E-000848FDE5B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E10A2D31-E630-4C5C-BB3E-000848FDE5B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E10A2D31-E630-4C5C-BB3E-000848FDE5B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{047860B6-D4C2-4748-9F38-6FAF609C587E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{047860B6-D4C2-4748-9F38-6FAF609C587E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{047860B6-D4C2-4748-9F38-6FAF609C587E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{047860B6-D4C2-4748-9F38-6FAF609C587E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42877264-3127-41A5-BAAF-01A760EB0BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42877264-3127-41A5-BAAF-01A760EB0BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42877264-3127-41A5-BAAF-01A760EB0BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42877264-3127-41A5-BAAF-01A760EB0BBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91D53FB0-7B5C-49E6-8CF4-A03A1EB0D737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91D53FB0-7B5C-49E6-8CF4-A03A1EB0D737}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91D53FB0-7B5C-49E6-8CF4-A03A1EB0D737}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91D53FB0-7B5C-49E6-8CF4-A03A1EB0D737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE448451-4477-4F4E-81A0-30AB5C27701D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE448451-4477-4F4E-81A0-30AB5C27701D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE448451-4477-4F4E-81A0-30AB5C27701D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE448451-4477-4F4E-81A0-30AB5C27701D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
